@@ -35,10 +35,14 @@ void print_arrow(int leftCol, int size)
     int half= size/2;
     while (row<half)
     {
-      int minCol=leftCol+size-row, maxCol=leftCol+size+row;
-      int col;
-      for (col=0; col<minCol;col++) putchar(' ');
-      for (     ; col<=minCol;col++) putchar('*');
+      int maxCol=10;
+      int arrCount=1;
+      int whiteSpace=5;
+      for (int i=0; i<=whiteSpace;i++) putchar(' ');
+      for (int i=0; i<=arrCount;i++) putchar('*');
+      for (int i=0; i<whiteSpace; i++) putchar(' ');
+      arrCount +=2;
+      whiteSpace -=2;
       putchar ('\n');
       row++;
     }
