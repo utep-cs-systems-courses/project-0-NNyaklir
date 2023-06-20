@@ -51,6 +51,7 @@ void print_arrow(int leftCol, int size)
     for(int i=0; i<whiteSpace2;i++) putchar(' ');
     for(int i=0; i<arrCount2; i++) putchar('*');
     for(int i=0; i<whiteSpace2; i++) putchar(' ');
+    putchar ('\n');
   }
 }
 
