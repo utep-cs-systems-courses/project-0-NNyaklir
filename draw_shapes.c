@@ -39,7 +39,7 @@ void print_arrow(int leftCol, int size)
     for (int i=0; i<=whiteSpace;i++) putchar(' ');
     for (int i=0; i<arrCount;i++) putchar('*');
     for (int i=0; i<=whiteSpace; i++) putchar(' ');
-    arrCount = arrCount+2;
+    arrCount = arrCount+4;
     whiteSpace = whiteSpace-2;
     putchar ('\n');
     row++;
