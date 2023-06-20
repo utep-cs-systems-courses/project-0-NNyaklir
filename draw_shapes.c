@@ -30,13 +30,16 @@ void print_triangle(int leftCol, int size)
 void print_arrow(int leftCol, int size)
 //This should make the begining of a triangle but at half the size for of the one above
 {
-  for (int row=0; row<=(size/2);row++)
+  for(int row=0; row<size;row++)
   {
-    int minCol=leftCol + size - row, maxCol=leftCol +size + row;
-    int col;
-    for (col=0; col<minCol; col++) putchar(' ');
-    for (     ; col<=minCol;col++) putchar('*');
-    putchar('\n');
+    int half= size/2;
+    while (row<half)
+    {
+      int minCol=leftCol+size-row, maxCol=leftCol+size+row;
+      int col;
+      for (col=0; col<minCol;col++) putchar(' ');
+      for (     ; col<=minCol;col++) putchar('*');
+    }
   }
 }
 
