@@ -34,7 +34,7 @@ void print_arrow(int leftCol, int size)
   int maxCol=10;
   int arrCount=1;
   int whiteSpace=5;
-  for(int row=0; row<size;)
+  for(int row=0; row<half;row++)
   {
     for (int i=0; i<=whiteSpace;i++) putchar(' ');
     for (int i=0; i<arrCount;i++) putchar('*');
@@ -42,7 +42,15 @@ void print_arrow(int leftCol, int size)
     arrCount = arrCount+4;
     whiteSpace = whiteSpace-2;
     putchar ('\n');
-    row++;
+  }
+  int whiteSpace2=5;
+  int arrCount2=3;
+
+  for (int row=half; row<size;row++)
+  {
+    for(int i=0; i<whiteSpace2;i++) putchar(' ');
+    for(int i=0; i<arrCount2; i++) putchar('*');
+    for(int i=0; i<whiteSpace2; i++) putchar(' ');
   }
 }
 
