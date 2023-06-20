@@ -35,6 +35,8 @@ void print_arrow(int leftCol, int size)
     int half= size/2;
     while (row<half)
     {
+      int row=0;
+      int half =size/2;
       int maxCol=10;
       int arrCount=1;
       int whiteSpace=5;
