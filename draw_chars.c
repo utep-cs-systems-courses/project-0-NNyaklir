@@ -25,4 +25,5 @@ void print_char_5x7(char c)
     }
     putchar('\n');
   }
+  putchar("\n");
 }
